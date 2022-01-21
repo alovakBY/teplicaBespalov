@@ -1,0 +1,186 @@
+.main {
+    margin-bottom: 100px;
+    padding-top: 190px;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 60px;
+    }
+}
+
+.main-left {
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.main-title {
+    margin-bottom: 10px;
+
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 991px) {
+        h1 {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h1 {
+            font-size: 34px;
+        }
+    }
+}
+
+.main-subTitle {
+    font-size: 60px;
+    line-height: 64px;
+    color: #140a00;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: -5px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 38px;
+    }
+}
+
+.main-info {
+    @media screen and (max-width: 991px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+}
+
+.price-title {
+    font-size: 21px;
+    line-height: 25px;
+    color: #140a00;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.price-bestPrice {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #ff7f00;
+    border: 1px solid #ff7f00;
+    padding: 2px 8px;
+}
+
+.price-value {
+    position: relative;
+    font-size: 96px;
+    line-height: 86px;
+    font-weight: 700;
+    color: #960a19;
+    text-shadow: 0 6px 15px rgb(150 10 25 / 30%);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 80px;
+        line-height: 80px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 66px;
+        line-height: 66px;
+        margin-bottom: 0;
+    }
+}
+
+.equipment-title {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #140a00;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 23px;
+        line-height: 27px;
+        margin-bottom: 8px;
+    }
+}
+
+.equipment-list {
+    margin-bottom: 30px;
+    padding: 0px;
+
+    li {
+        font-size: 25px;
+        line-height: 30px;
+        color: #140a00;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 19px;
+            line-height: 25px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.callback-button {
+    height: 60px;
+    display: inline-block;
+    font-size: 19px;
+    line-height: 19px;
+    color: #fff;
+    border-radius: 12px;
+    padding: 19px 17px;
+    background: linear-gradient(
+        to bottom,
+        rgba(131, 185, 76, 1) 0,
+        rgba(99, 165, 45, 1) 100%
+    );
+
+    &:hover {
+        background: linear-gradient(
+            to bottom,
+            rgba(143, 201, 76, 1) 0,
+            rgba(115, 185, 45, 1) 100%
+        );
+    }
+}

@@ -1,0 +1,208 @@
+.card-item {
+    position: relative;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: translateY(-25px);
+
+        .catalog__card > .card-body {
+            background: #fff;
+            border: 1px solid #dce0e0;
+            box-shadow: 0 40px 80px 0 rgb(230 240 245);
+        }
+    }
+}
+
+.catalog {
+    // .catalog__card
+
+    &__card__bottom {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+
+        button {
+            height: 60px;
+            font-size: 19px;
+            line-height: 1;
+            color: #fff;
+            border-radius: 12px;
+            padding: 20px 40px;
+            text-align: center;
+            background: linear-gradient(
+                to bottom,
+                rgba(131, 185, 76, 1) 0,
+                rgba(99, 165, 45, 1) 100%
+            );
+            box-shadow: 0 10px 30px 0 rgb(100 180 50 / 50%);
+            transition: background 0.4s ease, box-shadow 0.4s ease;
+
+            &:hover {
+                background: linear-gradient(
+                    to bottom,
+                    rgba(143, 201, 76, 1) 0,
+                    rgba(115, 185, 45, 1) 100%
+                );
+                box-shadow: 0 15px 30px 0 rgb(100 180 50 / 40%);
+            }
+        }
+    }
+
+    // .catalog__card-top
+
+    &__card-top {
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+
+    // .catalog__parameter
+
+    &__parameter {
+        margin-bottom: 15px;
+        &-name {
+            font-size: 17px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    }
+
+    // .catalog__input
+
+    &__input {
+        position: relative;
+        cursor: pointer;
+        min-width: 20%;
+        text-align: center;
+
+        & + & {
+            margin-left: 13px;
+        }
+
+        > input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .catalog__input__label {
+            display: inline-block;
+            width: 100%;
+            font-size: 17px;
+            line-height: 25px;
+            color: #645050;
+            border-radius: 6px;
+            padding: 3px 11px;
+            transition: color 0.4s ease, background 0.4s ease,
+                box-shadow 0.4s ease;
+
+            span {
+                border-bottom: 1px dashed rgba(100, 80, 80, 0.3);
+            }
+        }
+
+        > input:checked ~ .catalog__input__label {
+            background: #f7f4f4;
+            color: #960f19;
+            box-shadow: inset 0 3px 7px 0 rgb(70 75 75 / 30%);
+            cursor: default;
+        }
+    }
+
+    &__card__price--old s {
+        font-size: 22px;
+    }
+}
+
+.card-body {
+    padding: 20px;
+    transition: box-shadow 0.4s, border 0.4s;
+    border: 1px solid transparent;
+    border-radius: 25px;
+
+    .collapsing ~ div {
+        display: none;
+    }
+    .collapse.show ~ div {
+        display: none;
+    }
+}
+
+.card-title {
+    font-size: 52px;
+    line-height: 1;
+    color: #140a00;
+    transition: color 0.4s ease;
+    margin-bottom: 5px;
+}
+.card-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ff7f00;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #ff7f00;
+    padding: 2px 8px;
+    margin-right: 10px;
+}
+
+.card-text {
+    font-size: 17px;
+    line-height: 22px;
+    color: #140a00;
+    margin-bottom: 20px;
+}
+
+.card-moreDetails {
+    text-align: center;
+
+    button {
+        font-size: 17px;
+        line-height: 22px;
+        color: #140a00;
+        margin: 20px 0;
+        background-color: transparent;
+        border-bottom: 1px dashed rgba(100, 80, 80, 0.3);
+    }
+}
+
+.card-info-characteristics {
+    margin-bottom: 20px;
+}
+
+.card-info-characteristics-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    &-icon {
+        width: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 5px;
+
+        .fa-igloo,
+        .fa-arrows-alt-h,
+        .fa-arrows-alt-v {
+            font-size: 22px;
+            color: rgb(151, 151, 151);
+        }
+    }
+}
+.card-info-carcass {
+    font-size: 17px;
+    color: #140a00;
+    margin-bottom: 20px;
+}
+.calculator-price {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1;
+}

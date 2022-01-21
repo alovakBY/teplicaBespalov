@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Arsenal";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Arsenal-Regular"),
+        url(./fonts/Arsenal-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Arsenal";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Arsenal-Italic"),
+        url(./fonts/Arsenal-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Arsenal";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Arsenal-Bold"), url(./fonts/Arsenal-Bold.ttf) format("truetype");
+}

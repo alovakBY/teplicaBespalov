@@ -1,0 +1,9 @@
+.callback-modal-btn {
+    background: linear-gradient(to bottom, #83b94c 0, #63a52d 100%);
+    color: white;
+
+    &:hover {
+        background: linear-gradient(to bottom, #8fc94c 0, #73b92d 100%);
+        color: white;
+    }
+}

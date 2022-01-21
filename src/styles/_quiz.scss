@@ -1,0 +1,104 @@
+.quiz-section {
+    padding: 50px 0px;
+    background-color: #7db546;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 767px) {
+        padding: 15px 0px;
+    }
+
+    .row {
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+        }
+    }
+
+    .quiz-image {
+        width: 35%;
+        position: absolute;
+        top: -65px;
+        left: -40px;
+
+        img {
+            width: 100%;
+            height: auto;
+
+            @media screen and (max-width: 767px) {
+                object-fit: cover;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            top: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            position: static;
+            width: 240px;
+        }
+    }
+
+    .quiz-text {
+        padding-left: 50px;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 12px;
+        }
+    }
+
+    .quiz-text-title {
+        font-size: 52px;
+        line-height: 49px;
+        color: #ffffff;
+        margin-bottom: 10px;
+
+        b {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 35px;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+
+    .quiz-text-sub {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2e2e2e;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .quiz-button {
+        background: #ffffff;
+        border: 1px solid #dff9c6;
+        box-sizing: border-box;
+        border-radius: 12px;
+        width: 280px;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 1;
+        text-align: center;
+        color: #1b1a16;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #e7e7e7;
+        }
+    }
+}

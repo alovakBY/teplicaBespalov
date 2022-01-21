@@ -1,0 +1,120 @@
+.certificates {
+    padding: 115px 0px;
+
+    @media screen and (max-width: 1199px) {
+        padding: 80px 0px;
+    }
+    @media screen and (max-width: 991px) {
+        padding: 60px 0px;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 30px 0px;
+    }
+}
+.certificates-title {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 700;
+    color: #140a00;
+    text-align: center;
+    margin-bottom: 85px;
+
+    @media screen and (max-width: 991px) {
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 46px;
+        margin-bottom: 40px;
+    }
+}
+.certificates-top {
+    margin-bottom: 40px;
+}
+.certificates-top-image {
+    float: right;
+    max-width: 30%;
+
+    div {
+        margin-bottom: 20px;
+        width: 100%;
+
+        img {
+            width: 100%;
+
+            @media screen and (max-width: 767px) {
+                width: 200px;
+            }
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.4;
+        color: #140a00;
+        font-style: italic;
+        padding-left: 10px;
+        margin-bottom: 0px;
+
+        @media screen and (max-width: 767px) {
+            padding-left: 0px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 250px;
+        margin: 0 0 20px 20px;
+    }
+    @media screen and (max-width: 575px) {
+        float: none;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+}
+.certificates-top-text {
+    padding-right: 60px;
+    p {
+        font-size: 19px;
+        line-height: 1.4;
+        color: #140a00;
+        margin-bottom: 25px;
+        max-width: 70%;
+
+        @media screen and (max-width: 991px) {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-right: 0px;
+    }
+}
+
+.certificates-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media screen and (max-width: 575px) {
+        justify-content: center;
+    }
+}
+.certificate-item {
+    border: 4px inset #140a00;
+    margin: 0 20px 40px;
+    box-shadow: 0 8px 10px 0 rgb(180 190 190 / 45%);
+
+    @media screen and (max-width: 991px) {
+        margin: 0 10px 20px;
+    }
+}
